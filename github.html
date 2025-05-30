@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SHAKIRA LAS MUJERES YA NO LLORAN WORLD TOUR</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url(RECURSOS/480310682_18499408318011190_4349040988407942554_n.jpg);
+      background-size: 600px 800px;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+    }
+    .sideber {
+      width: 220px;
+      background-color: rgb(176, 176, 176);
+      color: rgb(0, 0, 0);
+      height: 100vh;
+      padding: 20px;
+      position: fixed;
+    }
+    .sideber h2 {
+      margin-top: 0;
+      text-align: center;
+    }
+    .sideber ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .sideber ul li {
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+    .sideber ul li:hover {
+      background-color: rgb(228, 166, 166);
+      cursor: pointer;
+    }
+    .main-content {
+      margin-left: 220px;
+      padding: 20px;
+      width: 100%;
+    }
+    h1 {
+      text-align: center;
+      color: white;
+    }
+    .seccion {
+      display: none;
+      margin-top: 20px;
+    }
+    .seccion.activa {
+      display: block;
+    }
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .card {
+      background-color: rgb(87, 88, 111);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgb(197, 197, 197);
+      text-align: center;
+    }
+    .card h2 {
+      margin: 10px 0;
+      color: antiquewhite;
+    }
+    .card p {
+      font-size: 18px;
+      color: black;
+    }
+    #vestuarios, #fechas, #setlist, #albumes, #video-sobre-la-gira {
+      color: white;
+      background-color: #4b4b4b;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+      text-align: center;
+    }
+    #vestuarios h2, #fechas h2, #setlist h2, #albumes h2, #video-sobre-la-gira h2 {
+      color: #151620;
+      margin-bottom: 10px;
+    }
+    #vestuarios p, #fechas p, #setlist p, #albumes p, #video-sobre-la-gira p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    footer {
+    background-color: transparent; /* o el color que uses de fondo */
+    text-align: center;
+    padding: 20px;
+    color: white; /* Aquí defines el color del texto */
+  }
+    
+  </style>
+</head>
+<body>
+  
+  <div class="sideber">
+    <h2>Menu de opciones</h2>
+    <ul>
+      <li onclick="mostrarSeccion('image-content')">INICIO</li>
+      <li onclick="mostrarSeccion('fechas')">FECHAS DEL CONCIERTO</li>
+      <li onclick="mostrarSeccion('vestuarios')">VESTUARIOS</li>
+      <li onclick="mostrarSeccion('setlist')">SETLIST OFICIAL</li>
+      <li onclick="mostrarSeccion('albumes')">ALBUM'S SOBRE EL TOUR</li>
+      <li onclick="mostrarSeccion('video-sobre-la-gira')">VIDEO SOBRE EL TOUR</li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <h1>SHAKIRA LAS MUJERES YA NO LLORAN WORLD TOUR</h1>
+
+    <div id="image-content" class="seccion">
+      <div class="dashboard">
+        <div class="card">
+          <h2>INICIO DEL TOUR</h2>
+          <p>11 de febrero de 2025, BR</p>
+        </div>
+        <div class="card">
+          <h2>NÚMERO DE FECHAS</h2>
+          <p>Shakira comprende un total de 44 conciertos confirmados, distribuidos entre América Latina y América del Norte.</p>
+        </div>
+        <div class="card">
+          <h2>LANZAMIENTO DE SU ÚLTIMO ÁLBUM</h2>
+          <p>Las Mujeres Ya No Lloran 24/03/2024</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="fechas" class="seccion">
+      <h2>Fechas del concierto</h2>
+      <p>Shakira se presentará en varias ciudades incluyendo São Paulo, Ciudad de México, Miami, Los Ángeles, entre otras.</p>
+      <img src="RECURSOS/fechas de la gira.jpeg" alt="Fechas del tour" style="width: 100%; max-width: 600px; display: block; margin: 20px auto; border-radius: 10px;">
+      <p style="text-align: center;">Esta es una de las imágenes promocionales del tour con fechas oficiales.</p>
+    </div>
+
+    <div id="vestuarios" class="seccion">
+      
+      <h2>Vestuarios</h2>
+      <table border="3" style="width: 100%; border-collapse: collapse; color: white; background-color: #4b4b4b; margin-top: 20px;">
+    <tr>
+      <td colspan="15" style="padding: 15px;"> 
+      <p>Los vestuarios fueron diseñados por reconocidos diseñadores internacionales y presentan un estilo moderno con inspiración latina.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">
+        <img src="RECURSOS/la fuerte.jpg" alt="Vestuario 1" width="150" height="200" style="display: block; margin: 0 auto 10px auto;">
+        Look de Apertura: Conjunto Plateado Metálico
+      </td>
+      <td style="padding: 10px; text-align: center;">
+        <img src="RECURSOS/480703700_18499408150011190_6617941952326752975_n.jpg" alt="Vestuario 1" width="150" height="200" style="display: block; margin: 0 auto 10px auto;">
+        <p>Minivestido Rosa con Cristales </p>
+      </td>
+
+      <td style="padding: 10px; text-align: center;">
+        <img src="RECURSOS/Esta nena tiene FANS, nuestra @shakira sigue rompiendo Récords después de 2 noches increíbles en el @metlifestadium que orgullo Auuuuuu (3).webp" width="150" height="200" style="display: block; margin: 0 auto 10px auto;">
+        Vestido Blanco Estilo Cowboy
+
+        <td style="padding: 10px; text-align: center;">
+        <img src="RECURSOS/body plateado.jpg" width="150" height="200" style="display: block; margin: 0 auto 10px auto;">
+         Body Plateado de rosa con Falda Transparente
+
+         <td style="padding: 10px; text-align: center;">
+        <img src="RECURSOS/Captura de pantalla 2025-05-28 230127.jpg" width="150" height="200" style="display: block; margin: 0 auto 10px auto;">
+          Vestido Azul con Corsé Metálico
+
+          <td style="padding: 10px; text-align: center;">
+        <img src="RECURSOS/red de pesca.jpg" width="150" height="200" style="display: block; margin: 0 auto 10px auto;">
+          Vestido de Red de Pesca
+
+          <td style="padding: 10px; text-align: center;">
+        <img src="RECURSOS/Esta nena tiene FANS, nuestra @shakira sigue rompiendo Récords después de 2 noches increíbles en el @metlifestadium que orgullo Auuuuuu (5).webp" width="150" height="200" style="display: block; margin: 0 auto 10px auto;">
+          Body con tonos rosados y apliques brillantes
+
+          <td style="padding: 10px; text-align: center;">
+        <img src="RECURSOS/shakira-momento-primer-concierto-gira-mujeres-lloran_103.webp" width="150" height="200" style="display: block; margin: 0 auto 10px auto;">
+          Conjunto Dorado Rockero
+
+          <td style="padding: 10px; text-align: center;">
+        <img src="RECURSOS/ultima.webp" width="150" height="200" style="display: block; margin: 0 auto 10px auto;">
+          Vestido Plateado con Microespejos
+
+          <td style="padding: 10px; text-align: center;">
+        <img src="RECURSOS/OJOS ASI.webp" width="150" height="200" style="display: block; margin: 0 auto 10px auto;">
+          Vestido Rojo con Bordados
+          
+          <td style="padding: 10px; text-align: center;">
+        <img src="RECURSOS/f671c7f9035edab72ea26e2e2b96b08c.jpg" width="150" height="200" style="display: block; margin: 0 auto 10px auto;">
+          Vestido Rojo Teñido a Mano
+
+          <td style="padding: 10px; text-align: center;">
+        <img src="RECURSOS/480282918_18499408330011190_608582387844731600_n.jpg" width="150" height="200" style="display: block; margin: 0 auto 10px auto;">
+          Vestido Marrón con Detalles Étnicos
+
+          <td style="padding: 10px; text-align: center;">
+        <img src="RECURSOS/waka.jpg" width="150" height="200" style="display: block; margin: 0 auto 10px auto;">
+          Conjunto colorido para "Waka Waka"
+
+          <td style="padding: 10px; text-align: center;">
+        <img src="RECURSOS/sesion53.webp" width="150" height="200" style="display: block; margin: 0 auto 10px auto;">
+          Enterizo Morado con Motivos de Loba
+
+
+    </tr>
+    <tr>
+      <td style="padding: 10px;">Diseñador: Donatella Versace <p>Chándal plateado con detalles brillantes y cuello alto. </p>
+    </td>
+
+      <td style="padding: 10px;">Diseñador: Donatella Versace <p> Minivestido de malla rosa adornado con cristales y detalles metálicos Medusa '95 
+        formando frunces. Utilizado durante la interpretación de "Girl Like Me" y "Las de la Intuición".</p></td>
+
+      <td style="padding: 10px;">Diseñador: Lindsey James<p> Vestido de cuero blanco con flecos, hebillas y tachuelas metálicas, inspirado en la 
+         estética cowboy. Usado durante las interpretaciones de "Empire" e "Inevitable". </p></td>
+
+         <td style="padding: 10px;">Diseñador: Donatella Versace<p>Body en tonos plateados de rosa  con una falda transparente, adornado con apliques brillantes. Utilizado en canciones como 
+          "Te Felicito", "TQG" y "Don't Bother </p></td>
+
+           <td style="padding: 10px;">Diseñador: Gaurav Gupta <p>Vestido de alta costura en tonalidades azules, con corsé acorazado y falda moldeada que simula olas del mar. Utilizado durante
+             la interpretación de "Acróstico" </p></td>
+
+             <td style="padding: 10px;">Diseñador: Natalia Fender <p> Vestido de ganchillo tipo red de pesca con acabado rasgado y sutiles lentejuelas bordadas. Usado en canciones como
+               "Copa Vacía", "La Tortura", "La Bicicleta" y "Hips Don't Lie". </p></td>
+
+               <td style="padding: 10px;">Diseñador: Donatella Versace <p> body en tonos rosados con una falda desmontable y apliques brillantes, que resalta su sensualidad y versatilidad en el escenario. </p></td>
+                 
+               <td style="padding: 10px;">Diseñador: Donatella Versace <p> Conjunto de top y falda metalizada en tono dorado, evocando la estética rockera de Shakira. Utilizado en canciones como "como dónde y cúando". </p></td>
+
+               <td style="padding: 10px;">Diseñador:  Zuhair Murad <p> Vestido confeccionado con 350 microespejos y 10,000 cristales bordados,
+                 representando las lágrimas de la portada del álbum.. </p></td>
+
+                 <td style="padding: 10px;"> Diseñador:Anamika Khanna <p> Vestido rojo con intrincados bordados y detalles brillantes, 
+                  fusionando la artesanía tradicional india con un estilo contemporáneo. </p></td>
+
+                  <td style="padding: 10px;"> Diseñador:Anamika Khanna <p> Vestido rojo teñido completamente a mano, evocando la era de "Servicio de Lavandería". </p></td>
+
+                  <td style="padding: 10px;"> Diseñador:Jawara Alleyne en colaboración con Gunnar Deatherage <p> Vestido marrón con flecos y 
+                     detalles étnicos, utilizado en la interpretación de whenever ,wherever (suerte). </p></td>
+
+                     <td style="padding: 10px;"> Diseñador: Jawara Alleyne <p> Conjunto vibrante y colorido, celebrando la cultura africana y
+                       la energía del Mundial.. </p></td>
+
+                       <td style="padding: 10px;"> Diseñador: Dario Mittmann  <p> Enterizo morado con fondo transparente, adornado con motivos de loba en brazos y pecho.
+                         Utilizado en la interpretación de "Loba" y "Shakira: Bzrp Music Sessions, Vol. 53". </p></td>
+    </tr>
+  </table>
+</div>
+    
+
+    <div id="setlist" class="seccion">
+      <h2>Setlist oficial</h2>
+      <p>Incluye canciones como "Hips Don't Lie", "BZRP Music Sessions #53", "Te Felicito", "Waka Waka" y muchas más.</p>
+
+    
+      <li>La Fuerte</li>
+  <p>Actuación: Comienza con el video “Camina con La Loba”. Shakira sube desde una plataforma entre luces blancas intensas, envuelta en una capa brillante. Entrada épica.</p>
+
+  <li>Girl Like Me</li>
+  <p>Actuación: Coreografía inspirada en el videoclip original. Se proyectan banderas latinoamericanas mientras Shakira menciona a las latinas, con visuales neón estilo retro.</p>
+
+  <li>Las de la Intuición / Estoy Aquí</li>
+  <p>Actuación: Medley nostálgico con luces púrpura. Visuales de sus primeros videoclips acompañan la energía pop y rock juvenil de esta parte del show.</p>
+
+  <li>Empire / Inevitable</li>
+  <p>Actuación: Empieza como balada y estalla en rock alternativo. Shakira canta con su banda entre luces blancas y rojas, llena de emoción e intensidad.</p>
+
+  <li>Te Felicito / TQG</li>
+  <p>Actuación: En “Te Felicito” aparecen dos robots con luces neón rosa que bailan. En “TQG” el escenario se llena de verde neón con una sensual coreografía central.</p>
+
+  <li>Don't Bother</li>
+  <p>Actuación: Shakira agarra su guitarra eléctrica rosada y ofrece una interpretación intensa, en un ambiente oscuro con luces rojas que estallan con cada acorde.</p>
+
+  <li>Acróstico</li>
+  <p>Actuación: Momento íntimo al piano, dedicado a sus hijos. Imágenes de Milan y Sasha en pantalla mientras ella canta con luz cálida y serena.</p>
+
+  <li>Copa Vacía / La Bicicleta / La Tortura</li>
+  <p>Actuación: Medley con ritmos latinos. Visuales de sus colaboraciones llenan las pantallas mientras Shakira baila con alegría tropical.</p>
+
+  <li>Hips Don’t Lie</li>
+  <p>Actuación: Coreografía icónica de caderas. Pantallas explotan en dorado mientras el público estalla en ovación.</p>
+
+  <li>Chantaje (Versión Salsa)</li>
+  <p>Actuación: Mientras canta, camina hacia el camerino. La canción toma ritmo de salsa con percusión en vivo. Luces cálidas acompañan la transición.</p>
+
+  <li>Monotonía</li>
+  <p>Actuación: Interpretación introspectiva con batería en vivo. El escenario se oscurece con visuales de corazones rotos y lluvia simbólica.</p>
+
+  <li>Addicted to You / Loca</li>
+  <p>Actuación: Medley bailable con ritmos tropicales. Escenario con estética de playa. Shakira se mueve con su estilo clásico, espontáneo y vibrante.</p>
+
+  <li>Soltera</li>
+  <p>Actuación: Coreografía sobre barra de pole dance en forma de “S”. Luces rosadas y estilo audaz y empoderado.</p>
+
+  <li>Como, Dónde y Cuándo</li>
+  <p>Actuación: Versión rockera con banda en vivo. Visuales con distorsiones coloridas y gran energía de interpretación.</p>
+
+    <li>(Entre Paréntesis)</li>
+  <p>Actuación: Shakira toma el micrófono con calma y una expresión emotiva. La banda Grupo Frontera la acompaña con guitarras acústicas y acordeón, mientras las luces cálidas y suaves bañan el escenario, creando un ambiente íntimo y nostálgico. Su voz transmite melancolía y fuerza al mismo tiempo, conectando profundamente con el público.</p>
+
+  <li>Ciega, Sordo, Muda</li>
+  <p>Actuación: Baile divertido y lleno de energía. Estética pop punk con luces vibrantes y pasos alegres que conectan con el público.</p>
+
+  <li>El Jefe</li>
+  <p>Actuación: Entrada con sombrero de vaquera. Escenografía tipo industrial y visuales de protesta social en pantalla. Ritmo regional poderoso.</p>
+
+  <li>Última</li>
+  <p>Actuación: Balada emotiva con vestido largo plateado. Luces frías y puesta en escena elegante y conmovedora.</p>
+
+  <li>Ojos Así</li>
+  <p>Actuación: Danza del vientre con visuales árabes y luces ámbar. Shakira se conecta con sus raíces orientales.</p>
+
+  <li>Pies Descalzos, Sueños Blancos</li>
+  <p>Actuación: Interpretación nostálgica con imágenes de su infancia. Iluminación blanca suave y conexión emocional.</p>
+
+  <li>Antología</li>
+  <p>Actuación: Shakira sola con guitarra acústica. Ambiente íntimo, voz clara y pura. Uno de los momentos más emotivos.</p>
+
+  <li>Poem to a Horse</li>
+  <p>Actuación: Versión rock con banda completa. Luces fucsia intermitentes y actitud rebelde en el escenario.</p>
+
+  <li>Underneath Your Clothes</li>
+  <p>Actuación: Balada romántica con Shakira sentada en un taburete. Luces rosadas suaves y visuales tipo videoclip clásico.</p>
+
+  <li>La Quiero a Morir / Je l’aime à mourir</li>
+  <p>Actuación: Versión bilingüe con guitarra en mano. Fondo de estrellas y luna. Interpretación dulce y minimalista.</p>
+
+  <li>Te Aviso, Te Anuncio / Objection (Tango)</li>
+  <p>Actuación: Baile con batucadas seguido por solo de guitarra eléctrica. Luces rojas y estética teatral que mezcla tango con rock.</p>
+
+  <li>Whenever, Wherever</li>
+  <p>Actuación: Danza del vientre y ritmos tribales. Visuales de paisajes naturales acompañan una interpretación vibrante y emocional.</p>
+
+  <li>Waka Waka</li>
+  <p>Actuación: Celebración con ritmos africanos, color y bailarines. Banderas del mundo en pantalla, momento de unión y alegría global.</p>
+
+  <li>Loba</li>
+  <p>Actuación: Coreografía sensual con estética felina. Luces moradas, movimientos en el suelo y actitud provocadora.</p>
+
+  <li>Shakira: BZRP Music Sessions Vol. 53 (Remix Tiësto)</li>
+  <p>Actuación: Cierre explosivo con visuales futuristas, pantallas LED y coreografía intensa. Energía total y despedida poderosa.</p>
+
+    </div>
+
+    <div id="albumes" class="seccion">
+      <h2>Album's  sobre Shakira </h2>
+      <table border="1" style="width: 100%; border-collapse: collapse; color: white; background-color: #4b4b4b; margin-top: 20px;">
+  
+      <th>PIES DESCALZOS(1995)</th>
+    <th>¿DÓNDE ESTÁN LOS LADRONES? (1998)</th>
+    <th>LAUNDRY SERVICE (2001)</th>
+    <th>FIJACIÓN ORAL VOL.1 (2005)</th>
+    <th>ORAL FIXATION VOL.2 (2005)</th>
+    <th>SHE WOLF (2009)</th>
+    <th>SALE EL SOL (2010)</th>
+    <th>SHAKIRA (2014)</th>
+    <th>EL DORADO  (2017)</th>
+    <th>LAS MUEJRES YA NO LLORAN (2024)</th>
+  </tr>
+  <tr>
+    <td>
+      <img src="RECURSOS/pies descalzos.jpeg" alt="Pies Descalzos" style="width: 500px; height: auto;"> 
+      <div class="album-info">
+        Este álbum marcó el verdadero inicio del éxito internacional de Shakira. Con canciones como "Estoy Aquí",
+         "Pies Descalzos, Sueños Blancos" y "Antología", mezcló pop rock con letras introspectivas y poéticas. Fue 
+          aclamado por su autenticidad y madurez a pesar de su juventud.
+
+          <li>Estoy Aquí</li>
+          <li>Antología</li>
+          <li>Un Poco de Amor</li>
+          <li>Quiero</li>
+          <li>Te Necesito</li>
+          <li>Vuelve</li>
+          <li>Te Espero Sentada</li>
+          <li>Pies Descalzos, Sueños Blancos</li>
+          <li>Pienso en Ti</li>
+          <li>¿Dónde Estás Corazón?</li>
+          <li>Se Quiere, Se Mata</li>
+            
+      </div>
+    </td>
+    <td>
+      <img src="RECURSOS/donde estan los ladrones.jpeg" alt="Dónde Están los Ladrones" style="width: 500px; height: auto;">
+      <div class="album-info">
+        Considerado por muchos como su obra maestra en español. Este disco consolidó su fama en América Latina y España. 
+        Producciones más pulidas, letras comprometidas y una voz más poderosa. Destacan temas como "Inevitable", "Tú" y "Ojos Así".
+
+        <li>Ciega, Sordomuda</li>
+        <li>Si Te Vas</li>
+        <li>Moscas en la Casa</li>
+        <li>No Creo</li>
+        <li>Inevitable</li>
+        <li>Octavo Día</li>
+        <li>Que Vuelvas</li>
+        <li>Tú</li>
+        <li>Dónde Están los Ladrones</li>
+        <li>Sombra de Ti</li>
+        <li>Ojos Así</li>
+
+      </div>
+    </td>
+    <td>
+      <img src="RECURSOS/laundry service.jpeg" alt="Laundry Service" style="width: 500px; height: auto;">
+      <div class="album-info">
+        Su primer álbum en inglés. Con éxitos como "Whenever, Wherever" y "Underneath Your Clothes", conquistó
+         el mercado anglosajón. Mantuvo su esencia latina con fusiones de rock y pop, pero apuntando a un sonido más global.
+
+         <li>Objection (Tango)</li>
+         <li>Underneath Your Clothes</li>
+         <li>Whenever, Wherever</li>
+         <li>Rules</li>
+         <li>The One</li>
+         <li>Ready for the Good Times</li>
+         <li>Fool</li>
+         <li>Te Dejo Madrid</li>
+         <li>Poem to a Horse</li>
+         <li>Que Me Quedes Tú</li>
+         <li>Eyes Like Yours (Ojos Así)</li>
+         <li>Suerte (Whenever, Wherever)</li>
+         <li>Te Aviso, Te Anuncio (Tango)</li>
+         <li>Whenever, Wherever (Sahara Remix)</li>
+         <li>Underneath Your Clothes (versión acústica)</li>
+        <li>Objection (Tango) (versión Afro-punk)</li>
+         <li>Whenever, Wherever (Pepsi Super Bowl LIV Halftime Show Remix)</li>
+
+      </div>
+    </td>
+    <td>
+      <img src="RECURSOS/fijacion oral 1.jpeg" alt="Fijación Oral Vol. 1" style="width: 500px; height: auto;">
+      <div class="album-info">
+        Este disco en español fue un regreso a su lírica intensa y sonidos latinos. "La Tortura", con Alejandro Sanz,
+         fue un fenómeno global. También destacan "No", "Día de Enero" y "Las de la Intuición", con un estilo más melódico, 
+         emocional y poético.
+
+   <li>En Tus Pupilas</li>
+  <li>La Pared</li>
+  <li>La Tortura (feat. Alejandro Sanz)</li>
+  <li>Obtener un Sí</li>
+  <li>Día de Enero</li>
+  <li>Escondite Inglés</li>
+  <li>No</li>
+  <li>Las de la Intuición</li>
+  <li>Día Especial (feat. Gustavo Cerati)</li>
+  <li>Lo Imprescindible</li>
+  <li>La Pared (versión acústica)</li>
+  <li>La Tortura (Shaketon Remix)</li>
+
+      </div>
+    </td>
+    <td>
+      <img src="RECURSOS/fijacion oral 2.jpeg" alt="Fijación Oral Vol. 2" style="width: 500px; height: auto;">
+      <div class="album-info">
+        La contraparte en inglés fue más atrevida y conceptual. Inicialmente recibió una recepción más tibia, pero el lanzamiento de "Hips Don’t Lie" (con Wyclef Jean)
+         la catapultó al éxito masivo. Otros temas notables incluyen "Don't Bother" y "Illegal" (con Carlos Santana).
+
+          <li>How Do You Do</li>
+  <li>Don't Bother</li>
+  <li>Illegal (feat. Carlos Santana)</li>
+  <li>The Day and the Time (feat. Gustavo Cerati)</li>
+  <li>Animal City</li>
+  <li>Dreams for Plans</li>
+  <li>Hey You</li>
+  <li>Your Embrace</li>
+  <li>Costume Makes the Clown</li>
+  <li>Something</li>
+  <li>Timor</li>
+  <li>Hips Don't Lie (feat. Wyclef Jean)</li>
+
+      </div>
+    </td>
+    <td>
+      <img src="RECURSOS/she wlf.jpeg" alt="She Wolf" style="width: 500px; height: auto;">
+      <div class="album-info">
+        Shakira explora sonidos más electrónicos y dance. Es un disco más experimental, sensual y 
+        vanguardista, con canciones como "She Wolf" y "Did It Again". Aunque polarizó opiniones, mostró
+         su constante evolución artística.
+
+  <li>She Wolf</li>
+  <li>Did It Again</li>
+  <li>Long Time</li>
+  <li>Why Wait</li>
+  <li>Good Stuff</li>
+  <li>Men in This Town</li>
+  <li>Gypsy</li>
+  <li>Spy (feat. Wyclef Jean)</li>
+  <li>Mon Amour</li>
+  <li>Loba</li>
+  <li>Gitana</li>
+
+      </div>
+    </td>
+    <td>
+      <img src="RECURSOS/sale el sol.jpeg" alt="Sale el Sol" style="width: 500px; height: auto;">
+      <div class="album-info">
+        Un retorno a sus raíces latinas con variedad de estilos: baladas, bachata ,ritmos caribeños y pop-rock. 
+        Canciones como "Loca", "Rabiosa" y "Antes de las Seis" lograron gran éxito. Es un disco cálido y diverso, que
+         reconectó con su público de habla hispana.
+
+          <li>Sale el Sol</li>
+  <li>Loca (feat. El Cata)</li>
+  <li>Antes de las Seis</li>
+  <li>Gordita (feat. Residente Calle 13)</li>
+  <li>Addicted to You</li>
+  <li>Lo Que Más</li>
+  <li>Mariposas</li>
+  <li>Rabiosa (feat. El Cata)</li>
+  <li>Devoción</li>
+  <li>Islands</li>
+  <li>Tu Boca</li>
+  <li>Waka Waka (This Time for Africa)</li>
+
+      </div>
+    </td>
+    <td>
+      <img src="RECURSOS/shakira.jpeg" alt="Shakira 2014" style="width: 500px; height: auto;">
+      <div class="album-info">
+        Un disco global y ecléctico que mezcló pop, reggae, rock y electrónica. Incluye "Can’t Remember to Forget You" junto a Rihanna, el potente sencillo "Empire" y "Dare (La La La)", que se convirtió en himno del Mundial 2014. Representa una etapa de madurez artística y apertura comercial.
+
+        <li>Dare (La La La)</li>
+  <li>Can't Remember to Forget You (feat. Rihanna)</li>
+  <li>Empire</li>
+  <li>You Don't Care About Me</li>
+  <li>Cut Me Deep (feat. MAGIC!)</li>
+  <li>Spotlight</li>
+  <li>Broken Record</li>
+  <li>Medicine (feat. Blake Shelton)</li>
+  <li>23</li>
+  <li>The One Thing</li>
+  <li>Nunca Me Acuerdo de Olvidarte</li>
+  <li>La La La (Brazil 2014)</li>
+  <li>Chasing Shadows</li>
+  <li>That Way</li>
+  <li>Boig Per Tu</li>
+
+      </div>
+    </td>
+    <td>
+      <img src="RECURSOS/el dorado.jpeg" alt="El Dorado" style="width: 500px; height: auto;">
+      <div class="album-info">
+      Enfocado en el pop urbano y la música latina, fue un éxito internacional. Incluye colaboraciones como "Chantaje" y "Clandestino" con Maluma, "Perro Fiel" con Nicky Jam, "Déjà Vu" con Prince Royce, "La Bicicleta" con Carlos Vives, y el hit autobiográfico "Me Enamoré".
+ 
+<li>Me Enamoré</li>
+  <li>Nada</li>
+  <li>Chantaje (feat. Maluma)</li>
+  <li>When a Woman</li>
+  <li>Amarillo</li>
+  <li>Perro Fiel (feat. Nicky Jam)</li>
+  <li>Trap (feat. Maluma)</li>
+  <li>Comme Moi (feat. Black M)</li>
+  <li>Coconut Tree</li>
+  <li>La Bicicleta (feat. Carlos Vives)</li>
+  <li>Deja Vu (feat. Prince Royce)</li>
+  <li>What We Said (Comme Moi)</li>
+  <li>Toneladas</li>
+  <li>Clandestino (feat. Maluma)</li>
+
+  </div>
+    </td>
+    <td>
+      <img src="RECURSOS/las muejres ya no lloran.jpeg" alt="Las Mujeres Ya No Lloran" style="width: 500px; height: auto;">
+      <div class="album-info">
+        Un álbum íntimo y poderoso, nacido tras su separación con Gerard Piqué. Con letras de desahogo y empoderamiento, explora el pop urbano y la balada con profundidad emocional. Con éxitos como "Monotonía" (con Ozuna), "BZRP Music Sessions #53", "TQG" (con Karol G) y "Acróstico", marca una nueva etapa íntima y directa en su carrera.
+
+       <li>Puntería (feat. Cardi B)</li>
+  <li>La Fuerte (feat. Bizarrap)</li>
+  <li>Tiempo Sin Verte</li>
+  <li>Cohete (feat. Rauw Alejandro)</li>
+  <li>(Entre Paréntesis) (feat. Grupo Frontera)</li>
+  <li>Cómo, Dónde y Cuándo</li>
+  <li>Nassau</li>
+  <li>Última</li>
+  <li>Te Felicito (feat. Rauw Alejandro)</li>
+  <li>Monotonía (feat. Ozuna)</li>
+  <li>Bzrp Music Sessions, Vol. 53</li>
+  <li>TQG (feat. Karol G)</li>
+  <li>Acróstico (feat. Milan y Sasha)</li>
+  <li>Copa Vacía (feat. Manuel Turizo)</li>
+  <li>El Jefe (feat. Fuerza Regida)</li>
+  <li>Bzrp Music Sessions, Vol. 53 (Remix Tiësto)</li>
+  <li>Puntería (Versión Vinilo)</li>
+
+      </div>
+    </td>
+  </tr>
+</table>
+
+</div> 
+<td>
+<div id="video-sobre-la-gira" class="seccion">
+  <h2>Video sobre el tour</h2>
+  <p>Shakira brilló en el Festival Sueños con un show lleno de fuerza y emoción. Presentó los temas de Las Mujeres Ya No Lloran con pasión y energía, conectando al máximo con su público. Este concierto es solo el comienzo de una nueva etapa poderosa. ¡Shakira está de regreso y lo mejor está por venir!</p>
+  <video controls width="660" height="500" style="max-width: 100%; border-radius: 10px;">
+    <source src="RECURSOS/Shakira  - Live at Sueños Music Festival 2025.mp4"video>
+    Tu navegador no soporta la reproducción de video.
+  </video>
+  </td>
+</div>
+ 
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('.seccion');
+      secciones.forEach(s => s.classList.remove('activa'));
+      const activa = document.getElementById(id);
+      if (activa) {
+        activa.classList.add('activa');
+        activa.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+    window.onload = () => {
+      mostrarSeccion('image-content');
+    };
+  </script>
+</body>
+</html>
+
+    <div id="fechas" class="seccion">
+  <h2>Fechas del concierto</h2>
+
+  <p>Shakira se presentará en varias ciudades incluyendo São Paulo, Ciudad de México, Miami, Los Ángeles, entre otras.</p>
+  <!-- Imagen solo para esta sección -->
+  <img src="RECURSOS/fechas de la gira.jpeg" alt="Fechas del tour" style="width: 100%; max-width: 600px; display: block; margin: 20px auto; border-radius: 10px;">
+
+  <p style="text-align: center;">Esta es una de las imágenes promocionales del tour con fechas oficiales.</p>
+
+</div>
+      
+
+    <div id="vestuarios" class="seccion">
+      <h2>Vestuarios</h2>
+    
+      <p>Los vestuarios fueron diseñados por reconocidos diseñadores internacionales y presentan un estilo moderno con inspiración latina.</p>
+    </div>
+
+    <div id="setlist" class="seccion">
+      <h2>Setlist oficial</h2>
+      <p>Incluye canciones como "Hips Don't Lie", "BZRP Music Sessions #53", "Te Felicito", "Waka Waka" y muchas más.</p>
+    </div>
+
+    <div id="albumes" class="seccion">
+      <h2>Álbum's sobre el tour</h2>
+      <p>Este tour celebra el álbum "Las Mujeres Ya No Lloran", junto con clásicos de "Fijación Oral", "El Dorado" y "Laundry Service".</p>
+    </div>
+
+    <div id="video-sobre-la-gira" class="seccion">
+     <h2>Video sobre el tour</h2>
+     
+     <p>Disfruta del video promocional oficial del tour "Las Mujeres Ya No Lloran".</p>
+  </div>
+
+<footer>
+      <p>© 2025 Las Mujeres Ya No Lloran World Tour – Sitio no oficial</p>
+      <audio controls>
+        <source src="RECURSOS/Shakira - Objection (Tango) (Las Mujeres Ya No Lloran World Tour - Studio Version).m4a"audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+      </audio>
+    </footer>
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('.seccion');
+      secciones.forEach(s => s.classList.remove('activa'));
+
+      const activa = document.getElementById(id);
+      if (activa) {
+        activa.classList.add('activa');
+        activa.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    window.onload = () => {
+      mostrarSeccion('image-content');
+    };
+  </script>
+</body>
+</html>
