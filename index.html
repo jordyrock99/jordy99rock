@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart fit</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1571019613578-2b27396e1c0b');
+      background-size: cover;
+      background-position: center;
+      color: #FFFFFF;
+    }
+
+    header, footer {
+      background-color: #000000;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      background-color: #1D1D1B;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #FFD100;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    section {
+      display: none;
+      background-color: rgba(0, 0, 0, 0.75);
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    form input, form select, form textarea, form button {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    form input, form select, form textarea {
+      background-color: #4e4e4a;
+      color: #FFD100;
+    }
+
+    form button {
+      background-color: #FFD100;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    video, audio {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+    }
+
+    .img-pequena {
+      width: 80px;
+      height: 80px;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      max-width: 100%;
+    }
+
+    .imagenes-historia {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .imagenes-historia img {
+      width: 30%;
+      height: auto;
+    }
+
+    #vision h2 {
+      border-bottom: 3px solid #FFD100;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    #vision p strong {
+      display: block;
+      border-bottom: 2px solid #FFD100;
+      margin-top: 20px;
+      padding-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://i0.wp.com/zymcorp.com/wp-content/uploads/2025/05/43-scaled-1.png?fit=2048%2C1152&ssl=1" alt="Gimnasio moderno" style="width: 300px; height: 150px;">
+    <p>Tu transformación empieza hoy</p>
+  </header>
+
+  <nav>
+    <a onclick="mostrarSeccion('historia')">Historia del Gimnasio</a>
+    <a onclick="mostrarSeccion('vision')">Visión y Misión</a>
+    <a onclick="mostrarSeccion('planes')">Planes</a>
+    <a onclick="mostrarSeccion('formulario')">Formulario</a>
+  </nav>
+
+  <!-- Historia -->
+  <section id="historia" class="active">
+    <h2>Historia del Gimnasio</h2>
+    <p>Smart Fit nació en 2009 con una visión clara: democratizar el acceso al fitness de alta calidad en América Latina. Fundada por Edgard Corona, también creador de Bio Ritmo, la cadena se propuso ofrecer una experiencia de entrenamiento moderna, accesible y eficiente, manteniendo altos estándares tecnológicos y de infraestructura.
+    La primera unidad de Smart Fit abrió en São Paulo, Brasil, y rápidamente la propuesta de bajo costo con instalaciones de primer nivel captó la atención del público. Con un modelo de expansión acelerada y estrategias innovadoras de suscripción, la marca creció exponencialmente en toda América Latina.
+    Hoy en día, Smart Fit es la cadena de gimnasios más grande de la región, con presencia en países como México, Chile, Colombia, Perú, Argentina y más. Con miles de unidades activas, continúa revolucionando la industria del fitness al ofrecer entrenamiento accesible para todos, impulsando el bienestar físico como un derecho universal y no un privilegio.</p>
+    
+    <div class="imagenes-historia">
+      <img src="https://pictures.smartfit.com.br/16233/big/fbb14ca2a3beaf754825beca8ded9e8c.jpeg?1734629363" alt="Gimnasio moderno" style="width: 650px; height: 450px;">
+      <img src="https://zoomempresarial.pe/wp-content/uploads/2022/08/SmartFit.jpg" alt="Gimnasio moderno" style="width: 650px; height: 450px;">
+      <img src="https://20230524t160642-dot-website-dot-fi-gcp-prom-dev.uk.r.appspot.com/images_test/FIDELIS_ID_2708.jpg" alt="Gimnasio moderno" style="width: 650px; height: 450px;">
+    </div>
+
+<h2>Video Promocional</h2>
+<div style="max-width: 600px; margin: 0 auto;">
+  <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/CGxQ7dMmKNk" 
+            style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+    <h2>Sonido de Zumba</h2>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+    </audio>
+  </section>
+
+  <!-- Visión y Misión -->
+  <section id="vision">
+    <h2>Visión y Misión</h2>
+    <p><strong>Visión:</strong> Brindar acceso a una vida saludable para todas las personas, ofreciendo experiencias de entrenamiento innovadoras, asequibles y de alta calidad en un entorno motivador, moderno y accesible.</p>
+    <img src="https://www.smartfit.cl/blog/wp-content/uploads/sites/2/2024/08/gimnasio-beneficios-plan-black.jpg" alt="Gimnasio moderno" style="width: 650px; height: 450px;">
+    <p><strong>Misión:</strong> Ser la cadena de gimnasios líder en Latinoamérica, reconocida por transformar positivamente la vida de millones de personas mediante tecnología, inclusión y excelencia en el entrenamiento físico.</p>
+    <img src="https://liderlife.liderempresarial.com/wp-content/uploads/2025/02/Gym-gratis-smart-fit-precios-accesibles-smart-fit.jpg" alt="Gimnasio moderno" style="width: 650px; height: 450px;">
+  </section>
+
+  <!-- Planes -->
+  <section id="planes">
+    <h2>Elige tu Plan</h2>
+    <form>
+      <label for="plan">Selecciona un plan:</label>
+      <select name="plan" id="plan">
+        <option value="basico">Plan Básico - $120/mes</option>
+        <option value="premium">Plan Premium - $150/mes</option>
+        <option value="vip">Plan VIP - $180/mes</option>
+      </select>
+
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="comentario">Comentarios adicionales:</label>
+      <textarea name="comentario" id="comentario" rows="4"></textarea>
+
+      <button type="submit">Solicitar Plan</button>
+    </form>
+
+    <img src="https://assets.smartfit.com.br/attachments/6c0f054403737abd7b211d91cfb27c6a612e25e6/store/da79e7d3431a4b9947358bb90a7e575b4de1c34c498b5fa92c51152bab03/banner_desktop" alt="Clases en gimnasio">
+  </section>
+
+  <!-- Formulario general -->
+  <section id="formulario">
+    <h2>Contáctanos</h2>
+    <form>
+      <label>Nombre:</label>
+      <input type="text" name="nombre" required>
+
+      <label>Correo electrónico:</label>
+      <input type="email" name="email" required>
+
+      <label>Teléfono:</label>
+      <input type="tel" name="telefono">
+
+      <label>Comentarios:</label>
+      <textarea name="comentarios" rows="4"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy;INTEGRANTE</p>
+    <li>jesus miguel manchay huacac</li>
+    <li>Leonardo David Camacho Inostroza</li>
+    <li>jjordy josmell sanchez sandoval </li>
+  </footer>
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('section');
+      secciones.forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
